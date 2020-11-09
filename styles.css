@@ -1,6 +1,146 @@
+/* 4em font size, center aligned and text color (#010B5B */
+
+/* A fluid layout design that adapts to the resizing of your browser window. Be sure to test your design before submitting.
+Vicious Cycle logo image. You may create your own design or use the banner image provided in Lesson 9 > Vicious Cycles Web Site > Project 1 Resources. This image must be sized with a relative value that makes it fluid (changes size as the browser window size decreases or increases).
+4 internal navigation links to Vicious Cycle pages that are planned to be incorporated into your final submission of Project 1. For now simple direct your pages to href = "#". These pages don't exist but code them so that they open in the same browser tab when they are incorporated into your Project. 
+1 related image (no bigger than 400 pixels wide or tall). Large images on any Web page are a thing of the past and considered poor design. You must use the CSS float property to wrap text around the image. Use appropriate padding, margins etc. for readability. This image must also be sized for a fluid presentation
+ (shrinks or grows according to view-port size). 
+You may use the text provided  in Lesson 9 > Vicious Cycles Web Site > Project 1 Resources. Modify this text as needed to meet the demands of your Design Brief.  
+Social Media links located in a footer element at the bottom of your home page. Use the platform logos to create image links that point to the log in page for Facebook and Twitter. See Project 1 resources for images. Keep these small and consistent is size. A valuable resource & guide can be found here: buffer.com - social-media-logos (opens in a new tab) [plain text URL: https://buffer.com/library/social-media-logos]
+1 external link to a site related to your topic. This link must open in a new browser tab.
+Accessible: all images must your the alt attribute equal to relevant text that describes the image for disability viewers. Sufficient contrast must always be employed as needed for ideal readability.
+CSS page margins of no less than 1.5 inches.
+A background color applied to your "body' element. Be certain to provide good readability by also formatting all text on the page with sufficient contrast. The colors are your choice as long as it is not black text on a white background or vice versa. Lets see who has the best design skills here.
+Must follow the rules of the HTML5 standard. Test your Home page at: W3C - Markup Validation Service (opens in a new tab) [plain text URL: https://validator.w3.org]. IMPORTANT: this service will be used as one of the grading criteria for your assignment grade! 
+ */
 body{
-    background-color: cyan;
+    background-color: #E7FBFB;
+    margin:0 0 0 0;
+    
 }
 header{
     text-align: center;
+    font-size: 4em;
+    color:#010B5B;
+    /* position: relative; */
+   
+}
+
+.logo{
+    float:left;
+    padding-top:10px;
+    width:150px;
+    height:100px;
+    margin-right:1%;
+}
+.navbar-design{
+    display:inline-block;
+    text-align:center;
+    height:70px;
+    width:100%;
+    /* padding:0px; */
+    /* background-color: #474747; */
+}
+
+.navbar-design ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+
+
+.navbar-design ul li{
+    /* display: inline; */
+    float:left;
+    position: relative;
+    /* margin-right: 10%; */
+}
+
+.navbar-design ul li a{
+    /* border-right:1px solid black; */
+    display:block;
+    color:#474747;
+    text-align: center;
+    line-height: 80px;
+    /* letter-spacing: 1em; */
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding:14px;
+}
+
+.navbar-design a:hover{
+    color:#010B5B;
+}
+/* .main-image-container{
+    margin: 0;
+    padding:0;
+} */
+
+.hero-image{
+   max-width: 100%;
+   height:auto;
+   /* padding-left: 350px; */
+   margin: 0 auto;
+   /* align-self: center; */
+  
+}
+p{
+    font-size: 22px;
+    color: #010B5B;
+}
+
+@media screen and (max-width:600px){
+.hero-image{
+    width: 300px;
+    height:200px;
+    margin-left: 250px;
+
+}
+header{
+    display:flex;
+}
+.navbar-design{
+    /* position: relative; */
+    display:inlin;
+    /* font-size:10px; */
+}
+}
+
+@media screen and (max-width: 870px){
+    .hero-image{
+        width: 400px;
+        height:400px;
+         /* margin: 12px 20px 12px 20px ;  */
+        /* margin-left: 10px; */
+    }
+    header{
+        font-size:2em;
+        text-align: center;
+        margin-left: 100px;
+    }
+    .navbar-design ul li a{
+        /* position: relative; */
+        display:inline-block;
+        line-height: 20px;
+        font-size: 12px;
+        /* font-size:10px; */
+    }
+    
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.icon{
+width:30px;
+
 }
